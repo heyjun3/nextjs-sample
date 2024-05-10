@@ -1,5 +1,6 @@
 "use client"
 import { useReducer } from "react";
+import { MyApp } from "./context";
 
 interface State {
   count: number;
@@ -34,6 +35,7 @@ export default function Page() {
       <p>Count: {state.count}</p>
       <button onClick={addFive}>Add 5</button>
       <button onClick={reset}>Reset</button>
+      <MyApp />
     </div>
   );
 }
